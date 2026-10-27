@@ -41,7 +41,7 @@ class WaterTrackerScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Container(
             constraints: const BoxConstraints(maxWidth: 360),
-            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 8.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,38 +49,38 @@ class WaterTrackerScreen extends StatelessWidget {
                 // Water drop icon
                 const Icon(
                   Icons.water_drop,
-                  size: 64,
+                  size: 56,
                   color: Color(0xFF3E9DFC),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 6),
 
                 // Title
                 const Text(
                   'Stay Hydrated!',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xFF1E293B),
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 3),
 
                 // Subtitle
                 const Text(
                   'Build a healthy daily habit',
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 13,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF5A6B82),
                   ),
                 ),
-                const SizedBox(height: 14),
+                const SizedBox(height: 12),
 
                 // Daily Water Goal Card
                 Container(
-                  width: 260,
+                  width: 250,
                   padding: const EdgeInsets.symmetric(
-                    vertical: 16.0,
+                    vertical: 14.0,
                     horizontal: 16.0,
                   ),
                   decoration: BoxDecoration(
@@ -93,26 +93,26 @@ class WaterTrackerScreen extends StatelessWidget {
                       Text(
                         'Daily Water Goal',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold,
                           color: Color(0xFF374459),
                         ),
                       ),
-                      SizedBox(height: 6),
+                      SizedBox(height: 4),
                       Text(
                         '8',
                         style: TextStyle(
-                          fontSize: 58,
+                          fontSize: 52,
                           fontWeight: FontWeight.w800,
                           color: Color(0xFF173FAF),
                           height: 1.05,
                         ),
                       ),
-                      SizedBox(height: 4),
+                      SizedBox(height: 2),
                       Text(
                         'glasses per day',
                         style: TextStyle(
-                          fontSize: 13,
+                          fontSize: 12,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF404B63),
                         ),
@@ -120,55 +120,55 @@ class WaterTrackerScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 14),
+                const SizedBox(height: 12),
 
                 // Tip Container 1: Drink water regularly
                 Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  padding: const EdgeInsets.symmetric(vertical: 11.0),
                   decoration: BoxDecoration(
                     color: const Color(0xFFD8E8FD),
-                    borderRadius: BorderRadius.circular(10.0),
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: const Center(
                     child: Text(
                       'Drink water regularly',
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                         color: Color(0xFF182A9F),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
 
                 // Tip Container 2: Bring your water bottle
                 Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  padding: const EdgeInsets.symmetric(vertical: 11.0),
                   decoration: BoxDecoration(
                     color: const Color(0xFFD8E8FD),
-                    borderRadius: BorderRadius.circular(10.0),
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: const Center(
                     child: Text(
                       'Bring your water bottle',
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                         color: Color(0xFF142B9D),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: 14),
+                const SizedBox(height: 12),
 
                 // Footer text
                 const Text(
                   'Every glass counts!',
                   style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 11,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF43536E),
                     letterSpacing: 0.2,
