@@ -30,13 +30,16 @@ class WaterTrackerScreen extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
+            fontSize: 22,
           ),
         ),
         backgroundColor: const Color(0xFF3862C8),
         centerTitle: true,
+        elevation: 0,
       ),
       body: Center(
-        child: Padding(
+        child: Container(
+          constraints: const BoxConstraints(maxWidth: 360),
           padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -45,7 +48,7 @@ class WaterTrackerScreen extends StatelessWidget {
               // Water drop icon
               const Icon(
                 Icons.water_drop,
-                size: 75,
+                size: 78,
                 color: Color(0xFF3E9DFC),
               ),
               const SizedBox(height: 12),
@@ -74,7 +77,7 @@ class WaterTrackerScreen extends StatelessWidget {
 
               // Daily Water Goal Card
               Container(
-                width: 270,
+                width: 265,
                 padding: const EdgeInsets.symmetric(
                   vertical: 20.0,
                   horizontal: 20.0,
@@ -82,13 +85,6 @@ class WaterTrackerScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0x0A000000),
-                      blurRadius: 10,
-                      offset: Offset(0, 4),
-                    ),
-                  ],
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -131,7 +127,7 @@ class WaterTrackerScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 decoration: BoxDecoration(
                   color: const Color(0xFFD8E8FD),
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: const Center(
                   child: Text(
@@ -152,7 +148,7 @@ class WaterTrackerScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 decoration: BoxDecoration(
                   color: const Color(0xFFD8E8FD),
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: const Center(
                   child: Text(
