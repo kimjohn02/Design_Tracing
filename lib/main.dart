@@ -30,7 +30,7 @@ class WaterTrackerScreen extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 22,
+            fontSize: 20,
           ),
         ),
         backgroundColor: const Color(0xFF3862C8),
@@ -38,142 +38,144 @@ class WaterTrackerScreen extends StatelessWidget {
         elevation: 0,
       ),
       body: Center(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 360),
-          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Water drop icon
-              const Icon(
-                Icons.water_drop,
-                size: 78,
-                color: Color(0xFF3E9DFC),
-              ),
-              const SizedBox(height: 12),
+        child: SingleChildScrollView(
+          child: Container(
+            constraints: const BoxConstraints(maxWidth: 360),
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Water drop icon
+                const Icon(
+                  Icons.water_drop,
+                  size: 64,
+                  color: Color(0xFF3E9DFC),
+                ),
+                const SizedBox(height: 8),
 
-              // Title
-              const Text(
-                'Stay Hydrated!',
-                style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF1E293B),
+                // Title
+                const Text(
+                  'Stay Hydrated!',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF1E293B),
+                  ),
                 ),
-              ),
-              const SizedBox(height: 6),
+                const SizedBox(height: 4),
 
-              // Subtitle
-              const Text(
-                'Build a healthy daily habit',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w500,
-                  color: Color(0xFF5A6B82),
+                // Subtitle
+                const Text(
+                  'Build a healthy daily habit',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF5A6B82),
+                  ),
                 ),
-              ),
-              const SizedBox(height: 18),
+                const SizedBox(height: 14),
 
-              // Daily Water Goal Card
-              Container(
-                width: 265,
-                padding: const EdgeInsets.symmetric(
-                  vertical: 20.0,
-                  horizontal: 20.0,
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(16.0),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Text(
-                      'Daily Water Goal',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF374459),
+                // Daily Water Goal Card
+                Container(
+                  width: 260,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 16.0,
+                    horizontal: 16.0,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16.0),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const [
+                      Text(
+                        'Daily Water Goal',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF374459),
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 8),
-                    Text(
-                      '8',
-                      style: TextStyle(
-                        fontSize: 68,
-                        fontWeight: FontWeight.w800,
-                        color: Color(0xFF173FAF),
-                        height: 1.1,
+                      SizedBox(height: 6),
+                      Text(
+                        '8',
+                        style: TextStyle(
+                          fontSize: 58,
+                          fontWeight: FontWeight.w800,
+                          color: Color(0xFF173FAF),
+                          height: 1.05,
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 6),
-                    Text(
-                      'glasses per day',
+                      SizedBox(height: 4),
+                      Text(
+                        'glasses per day',
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF404B63),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 14),
+
+                // Tip Container 1: Drink water regularly
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFD8E8FD),
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Drink water regularly',
                       style: TextStyle(
                         fontSize: 15,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFF404B63),
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF182A9F),
                       ),
                     ),
-                  ],
+                  ),
                 ),
-              ),
-              const SizedBox(height: 16),
+                const SizedBox(height: 10),
 
-              // Tip Container 1: Drink water regularly
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 14.0),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFD8E8FD),
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Drink water regularly',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF182A9F),
+                // Tip Container 2: Bring your water bottle
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFD8E8FD),
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Bring your water bottle',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF142B9D),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 10),
+                const SizedBox(height: 14),
 
-              // Tip Container 2: Bring your water bottle
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 14.0),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFD8E8FD),
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Bring your water bottle',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF142B9D),
-                    ),
+                // Footer text
+                const Text(
+                  'Every glass counts!',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF43536E),
+                    letterSpacing: 0.2,
                   ),
                 ),
-              ),
-              const SizedBox(height: 18),
-
-              // Footer text
-              const Text(
-                'Every glass counts!',
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w500,
-                  color: Color(0xFF43536E),
-                  letterSpacing: 0.2,
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
